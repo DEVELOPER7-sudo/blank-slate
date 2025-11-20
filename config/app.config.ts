@@ -48,34 +48,25 @@ export const appConfig = {
     workingDirectory: '/home/user/app',
   },
   
-  // AI Model Configuration
+  // AI Model Configuration (Puter)
   ai: {
     // Default AI model
-    defaultModel: 'google/gemini-3-pro-preview',
+    defaultModel: 'puter/gpt-5-nano',
     
     // Available models
     availableModels: [
-      'openai/gpt-5',
-      'moonshotai/kimi-k2-instruct-0905',
-      'anthropic/claude-sonnet-4-20250514',
-      'google/gemini-3-pro-preview'
+      'puter/gpt-5-nano',
+      'puter/gpt-5'
     ],
     
     // Model display names
     modelDisplayNames: {
-      'openai/gpt-5': 'GPT-5',
-      'moonshotai/kimi-k2-instruct-0905': 'Kimi K2 (Groq)',
-      'anthropic/claude-sonnet-4-20250514': 'Sonnet 4',
-      'google/gemini-3-pro-preview': 'Gemini 3 Pro (Preview)'
+      'puter/gpt-5-nano': 'GPT-5 Nano (Puter)',
+      'puter/gpt-5': 'GPT-5 (Puter)'
     } as Record<string, string>,
     
     // Model API configuration
-    modelApiConfig: {
-      'moonshotai/kimi-k2-instruct-0905': {
-        provider: 'groq',
-        model: 'moonshotai/kimi-k2-instruct-0905'
-      }
-    },
+    modelApiConfig: {},
     
     // Temperature settings for non-reasoning models
     defaultTemperature: 0.7,
