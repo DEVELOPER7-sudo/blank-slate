@@ -17,6 +17,10 @@
 .env*
 !.env.example
 
+# Documentation (don't deploy)
+README.md
+/packages/create-open-lovable/templates/*/README.md
+
 # Production
 *.pem
 
